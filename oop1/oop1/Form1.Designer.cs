@@ -74,7 +74,6 @@
             this.pB_withPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pB_withPicture.TabIndex = 1;
             this.pB_withPicture.TabStop = false;
-            this.pB_withPicture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pB_withPicture_MouseDown);
             // 
             // PushMe
             // 
@@ -98,7 +97,6 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(167, 13);
             this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -145,6 +143,7 @@
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "fill the shape";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // rB_green
             // 
@@ -157,6 +156,7 @@
             this.rB_green.TabStop = true;
             this.rB_green.Text = "green";
             this.rB_green.UseVisualStyleBackColor = true;
+            this.rB_green.CheckedChanged += new System.EventHandler(this.rB_green_CheckedChanged);
             // 
             // rB_blue
             // 
@@ -169,6 +169,7 @@
             this.rB_blue.TabStop = true;
             this.rB_blue.Text = "blue";
             this.rB_blue.UseVisualStyleBackColor = true;
+            this.rB_blue.CheckedChanged += new System.EventHandler(this.rB_blue_CheckedChanged);
             // 
             // rB_red
             // 
@@ -181,6 +182,7 @@
             this.rB_red.TabStop = true;
             this.rB_red.Text = "red";
             this.rB_red.UseVisualStyleBackColor = true;
+            this.rB_red.CheckedChanged += new System.EventHandler(this.rB_red_CheckedChanged);
             // 
             // progressBar
             // 
@@ -190,7 +192,6 @@
             this.progressBar.Size = new System.Drawing.Size(507, 16);
             this.progressBar.Step = 1;
             this.progressBar.TabIndex = 7;
-            this.progressBar.Click += new System.EventHandler(this.progressBar_Click);
             // 
             // pB_withShapes
             // 
@@ -199,6 +200,7 @@
             this.pB_withShapes.Size = new System.Drawing.Size(160, 186);
             this.pB_withShapes.TabIndex = 8;
             this.pB_withShapes.TabStop = false;
+            this.pB_withShapes.Paint += new System.Windows.Forms.PaintEventHandler(this.pB_withShapes_Paint);
             // 
             // numericUpDown1
             // 
@@ -216,7 +218,6 @@
             this.labelForWhistler.Size = new System.Drawing.Size(168, 13);
             this.labelForWhistler.TabIndex = 10;
             this.labelForWhistler.Text = "Count to 3 and see what happend";
-            this.labelForWhistler.Click += new System.EventHandler(this.labelForWhistler_Click);
             // 
             // linkLabel1
             // 
@@ -251,7 +252,6 @@
             this.labelForProgBar.Text = "You clicked 20 times, maybe enough?";
             this.labelForProgBar.Visible = false;
             this.labelForProgBar.VisibleChanged += new System.EventHandler(this.labelForProgBar_VisibleChanged);
-            this.labelForProgBar.Click += new System.EventHandler(this.labelForProgBar_Click);
             // 
             // Form1
             // 

@@ -63,56 +63,72 @@ namespace oop1
                 labelForProgBar.Visible = true;
             }
         }
-        
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
-            switch (cB_withShapes.Text)
+            pB_withShapes.Refresh();
+        }
+
+        private Pen GetPen()
+        {
+            if (rB_red.Checked)
             {
-                case "ellips":
-                    {
-                        
-                        int centerX = 50;
-                        int centerY = 50;
-                        int radius = 25;
-                        e.Graphics.DrawEllipse(Pens.Blue, centerX, centerY, radius, radius);
-                        MessageBox.Show("ok");
-                        break;
-                    }
-                case "rectangle":
-                    {
-
-                        break;
-                    }
-                    //default: break;
+                if (checkBox1.Checked)
+                {
+                    return new Pen(Color.Red, 5);
+                }
+                return new Pen(Color.Red, 2);
             }
-            */
+            if (rB_green.Checked)
+            {
+                if (checkBox1.Checked)
+                {
+                    return new Pen(Color.Green, 5);
+                }
+                return new Pen(Color.Green, 2);
+            }
+            if (rB_blue.Checked)
+            {
+                if (checkBox1.Checked)
+                {
+                    return new Pen(Color.Blue, 5);
+                }
+                return new Pen(Color.Blue, 2);
+            }
+            return new Pen(Color.Black);
         }
 
-        private void labelForWhistler_Click(object sender, EventArgs e)
+        private void pB_withShapes_Paint(object sender, PaintEventArgs e)
         {
+            Graphics paint = e.Graphics;
+            if (cB_withShapes.SelectedIndex == 0)
+            {
+                paint.DrawEllipse(GetPen(), pB_withShapes.Width / 2 - 50 , pB_withShapes.Height / 2 - 50, 100, 100);
+            }
+            if (cB_withShapes.SelectedIndex == 1)
+            {
+                paint.DrawRectangle(GetPen(), pB_withShapes.Width / 2 - 50, pB_withShapes.Height / 2 - 50, 100, 100);
+            }
         }
 
-        private void progressBar_Click(object sender, EventArgs e)
-        {            
-        }
-
-        private void labelForProgBar_Click(object sender, EventArgs e)
+        private void rB_red_CheckedChanged(object sender, EventArgs e)
         {
+            pB_withShapes.Refresh();
         }
 
-        private void pB_withPicture_MouseDown(object sender, MouseEventArgs e)
+        private void rB_blue_CheckedChanged(object sender, EventArgs e)
         {
-
+            pB_withShapes.Refresh();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void rB_green_CheckedChanged(object sender, EventArgs e)
         {
+            pB_withShapes.Refresh();
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            pB_withShapes.Refresh();
         }
     }
 }

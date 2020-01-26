@@ -7,3 +7,13 @@ C:\Users\User\source\repos\oop1\oop1\obj\Debug\oop1.Properties.Resources.resourc
 C:\Users\User\source\repos\oop1\oop1\obj\Debug\oop1.csproj.GenerateResource.cache
 C:\Users\User\source\repos\oop1\oop1\obj\Debug\oop1.exe
 C:\Users\User\source\repos\oop1\oop1\obj\Debug\oop1.pdb
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\bin\Debug\oop1.exe.config
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\bin\Debug\oop1.exe
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\bin\Debug\oop1.pdb
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.csprojAssemblyReference.cache
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.Form1.resources
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.Properties.Resources.resources
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.csproj.GenerateResource.cache
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.csproj.CoreCompileInputs.cache
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.exe
+C:\Users\Павел\source\repos\Суткевич\oop_lab1\oop1\oop1\obj\Debug\oop1.pdb
